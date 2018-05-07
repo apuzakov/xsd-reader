@@ -1383,7 +1383,7 @@ class SchemaReader
         $xp->registerNamespace('xs', 'http://www.w3.org/2001/XMLSchema');
 
         if ($xp->query('ancestor::xs:choice', $node)->length) {
-            $element->setMin(0);
+            //$element->setMin(0);
         }
 
         if ($node->hasAttribute('nillable')) {
